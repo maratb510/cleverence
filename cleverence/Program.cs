@@ -7,17 +7,17 @@ class Program
 {
     static async Task Main()
     {
-        Console.WriteLine("Введите путь к входному лог-файлу (по умолчанию: logs.txt):");
+        Console.WriteLine("Введите путь к входному лог-файлу (по умолчанию: bin/logs.txt):");
         string inputFile = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(inputFile))
             inputFile = "logs.txt";
 
-        Console.WriteLine("Введите путь к выходному файлу (по умолчанию: output.txt):");
+        Console.WriteLine("Введите путь к выходному файлу (по умолчанию: bin/output.txt):");
         string outputFile = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(outputFile))
             outputFile = "output.txt";
 
-        Console.WriteLine("Введите путь к файлу с проблемами (по умолчанию: problems.txt):");
+        Console.WriteLine("Введите путь к файлу с проблемами (по умолчанию: bin/problems.txt):");
         string problemsFile = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(problemsFile))
             problemsFile = "problems.txt";
